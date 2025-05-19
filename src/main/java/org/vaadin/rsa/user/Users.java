@@ -4,7 +4,9 @@ import org.springframework.stereotype.Service;
 import org.vaadin.rsa.RideSharingAppException;
 
 import java.io.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * A collection of players. Contains methods for registration, authentication and retrieving players and their names.
@@ -136,6 +138,14 @@ public class Users implements Serializable {
         }
 
         return user;
+    }
+
+    /**
+     * Returns list of all registered Users
+     * @return list of users
+     */
+    public List<User> getUsers() {
+        return new ArrayList<>(users.values());
     }
 
     /**
