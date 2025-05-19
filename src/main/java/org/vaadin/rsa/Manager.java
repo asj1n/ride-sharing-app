@@ -10,6 +10,7 @@ import org.vaadin.rsa.user.User;
 import org.vaadin.rsa.user.UserStars;
 import org.vaadin.rsa.user.Users;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -172,5 +173,13 @@ public class Manager {
 
         throw new RideSharingAppException("Error while getting average stars. " +
                                             "User " + nick + " not found");
+    }
+
+    /**
+     * Returns Users instance associated with the Manager class
+     * @return Users
+     */
+    public List<User> getUsers() {
+        return users.getUsers();
     }
 }

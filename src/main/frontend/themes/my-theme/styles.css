@@ -8,3 +8,9 @@
     --lumo-body-text-color: hsl(214, 0%, 76%);
     --lumo-font-family: 'JetBrains Mono', monospace;
 }
+
+vaadin-grid.users-grid::part(header-cell) {
+    background-color: #f1f1f1;
+    color: black;
+    font-weight: bold;
+}
