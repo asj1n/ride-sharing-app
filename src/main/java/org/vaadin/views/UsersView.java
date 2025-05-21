@@ -240,8 +240,7 @@ public class UsersView extends Composite<VerticalLayout> {
 
         selectedUser.addCar(new Car(plate, make, model, color));
         userDataProvider.refreshAll();
-        showNotification(LUMO_SUCCESS,
-                "Successfully added Car " + plate + " for User " + selectedUser.getNick());
+        showNotification(LUMO_SUCCESS, "Successfully added Car " + plate + " for User " + selectedUser.getNick());
     }
 
     private void deleteUserCar(String plate) {
@@ -251,8 +250,7 @@ public class UsersView extends Composite<VerticalLayout> {
         }
 
         if (!StringUtils.hasText(plate)) {
-            showNotification(LUMO_ERROR,
-                    "Failed to delete car for user " + selectedUser.getNick() + ", please indicate a plate");
+            showNotification(LUMO_ERROR, "Failed to delete car for user " + selectedUser.getNick() + ", please indicate a plate");
             return;
         }
 
@@ -279,8 +277,7 @@ public class UsersView extends Composite<VerticalLayout> {
         }
 
         if (!StringUtils.hasText(preferredMatch)) {
-            showNotification(LUMO_ERROR,
-                    "Failed to update preferredMatch match for user " + selectedUser.getNick() + ", please select a valid option");
+            showNotification(LUMO_ERROR, "Failed to update preferredMatch match for user " + selectedUser.getNick() + ", please select a valid option");
             return;
         }
 
@@ -299,8 +296,7 @@ public class UsersView extends Composite<VerticalLayout> {
         }
 
         if (!StringUtils.hasText(role) || !StringUtils.hasText(stars)) {
-            showNotification(LUMO_ERROR,
-                    "Failed to add stars to user " + selectedUser.getNick() + ", please select a valid option");
+            showNotification(LUMO_ERROR, "Failed to add stars to user " + selectedUser.getNick() + ", please select a valid option");
             return;
         }
 
