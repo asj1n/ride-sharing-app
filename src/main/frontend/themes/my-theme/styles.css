@@ -1,9 +1,9 @@
 @import url('./main-layout.css');
 [theme~="dark"] {
-    --lumo-base-color: hsl(214, 11%, 15%);
-    --lumo-primary-color: hsl(214, 87%, 51%);
+    --lumo-base-color: hsl(225, 6%, 13%);
+    --lumo-primary-color: hsl(235, 69%, 58%, 1);
     --lumo-primary-color-50pct: hsla(0, 0%, 0%, 0.5);
-    --lumo-primary-color-10pct: hsla(214, 69%, 49%, 0.1);
+    --lumo-primary-color-10pct: hsla(235, 69%, 58%, 0.8);
     --lumo-primary-text-color: hsl(214, 100%, 100%);
     --lumo-body-text-color: hsl(214, 0%, 76%);
     --lumo-font-family: 'JetBrains Mono', monospace;
@@ -13,4 +13,9 @@ vaadin-grid.users-grid::part(header-cell) {
     background-color: #f1f1f1;
     color: black;
     font-weight: bold;
+}
+
+vaadin-grid.users-grid {
+    max-height: 300px;
+    overflow: auto;
 }

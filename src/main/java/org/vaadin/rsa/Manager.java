@@ -1,6 +1,5 @@
 package org.vaadin.rsa;
 
-import org.springframework.stereotype.Service;
 import org.vaadin.rsa.match.Location;
 import org.vaadin.rsa.match.Matcher;
 import org.vaadin.rsa.match.PreferredMatch;
@@ -181,5 +180,22 @@ public class Manager {
      */
     public List<User> getUsers() {
         return users.getUsers();
+    }
+
+    /**
+     * Deletes a car registered to a given user
+     * @param nick of user
+     * @param key of user
+     * @param plate of car
+     * @throws RideSharingAppException if failure when authenticating user
+     */
+    public void deleteCar(String nick, String key, String plate) throws RideSharingAppException {
+        if (users.authenticate(nick, key)) {
+            users.deleteUserCar(nick, plate);
+            return;
+        }
+
+        throw new RideSharingAppException("Error while deleting car. " +
+                                            "Failed authentication for user " + nick);
     }
 }

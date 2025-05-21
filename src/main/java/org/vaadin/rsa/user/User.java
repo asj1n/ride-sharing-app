@@ -137,6 +137,14 @@ public class User implements Serializable {
     }
 
     /**
+     * Return all car of user
+     * @return list of all user cars
+     */
+    public List<Car> getCars() {
+        return new ArrayList<>(cars.values());
+    }
+
+    /**
      * Add stars to user according to a role. The registered values are used to compute an average.
      * @param moreStars to add to this user
      * @param role in which stars are added
