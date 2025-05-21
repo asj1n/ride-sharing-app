@@ -179,4 +179,16 @@ public class Users implements Serializable {
             fileOutputStream.writeObject(this);
         }
     }
+
+    /**
+     * Removes a registered car from a given User
+     * @param nick of user
+     * @param plate of user's car
+     */
+    public void deleteUserCar(String nick, String plate) {
+        User user = users.get(nick);
+        if (user != null) {
+            user.deleteCar(plate);
+        }
+    }
 }
