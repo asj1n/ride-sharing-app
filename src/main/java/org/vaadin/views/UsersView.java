@@ -19,6 +19,7 @@ import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import org.springframework.util.StringUtils;
+import org.vaadin.lineawesome.LineAwesomeIconUrl;
 import org.vaadin.rsa.Manager;
 import org.vaadin.rsa.RideSharingAppException;
 import org.vaadin.rsa.match.PreferredMatch;
@@ -33,7 +34,7 @@ import static com.vaadin.flow.component.notification.NotificationVariant.*;
 
 @PageTitle("Users")
 @Route("users")
-@Menu(order = 1)
+@Menu(order = 1, icon = LineAwesomeIconUrl.USER)
 public class UsersView extends Composite<VerticalLayout> {
     Manager manager = Manager.getInstance();
     List<User> users = manager.getUsers();
@@ -117,7 +118,7 @@ public class UsersView extends Composite<VerticalLayout> {
         colorCombo.setRequiredIndicatorVisible(true);
 
         Button addCarButton = new Button("ADD CAR");
-        addCarButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_WARNING);
+        addCarButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_SUCCESS);
         addCarButton.addClickListener(clickEvent -> {
             addUserCar(plateField.getValue(), makeField.getValue(), modelField.getValue(), colorCombo.getValue());
         });
@@ -156,7 +157,7 @@ public class UsersView extends Composite<VerticalLayout> {
         preferredMatchCombo.setRequiredIndicatorVisible(true);
 
         Button preferredMatchButton = new Button("UPDATE PREFERRED MATCH");
-        preferredMatchButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_SUCCESS);
+        preferredMatchButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY, ButtonVariant.LUMO_WARNING);
         preferredMatchButton.addClickListener(clickEvent -> {
             updateUserPreferredMatch(preferredMatchCombo.getValue());
         });
