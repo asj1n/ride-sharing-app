@@ -375,6 +375,9 @@ public class RidesView extends Composite<VerticalLayout> {
             matchedRidesDataProvider.getItems().add(passengerRide.getId());
             matchedRidesDataProvider.refreshAll();
 
+            rideMatchDataProvider.getItems().clear();
+            rideMatchDataProvider.refreshAll();
+
             showNotification(LUMO_SUCCESS, "Successfully accepted ride match " + rideMatch.getId());
         }
     }
@@ -388,21 +391,7 @@ public class RidesView extends Composite<VerticalLayout> {
         manager.concludeRide(rideId, stars);
         showNotification(LUMO_SUCCESS, "Successfully concluded rideId " + rideId + " with " + stars);
 
-        List<RideMatch> rideMatches = new ArrayList<>(rideMatchDataProvider.getItems());
-
-        for (RideMatch rideMatch : rideMatchDataProvider.getItems()) {
-            Ride driverRide = rideMatch.getRide(RideRole.DRIVER);
-            Ride passengerRide = rideMatch.getRide(RideRole.PASSENGER);
-
-            if (driverRide.getId() == rideId && driverRide.isMatched()
-            || (passengerRide.getId() == rideId && passengerRide.isMatched())) {
-                rideMatches.remove(rideMatch);
-                showNotification(LUMO_SUCCESS, "Successfully removed RideMatch " + rideMatch.getId());
-            }
-        }
-
         rideMatchDataProvider.getItems().clear();
-        rideMatchDataProvider.getItems().addAll(rideMatches);
         rideMatchDataProvider.refreshAll();
 
         rideDataProvider.getItems().remove(rideId);
