@@ -9,4 +9,9 @@ import org.vaadin.rsa.quad.HasPoint;
  * @param x coordinate
  * @param y coordinate
  */
-public record Location(double x, double y) implements HasPoint {}
+public record Location(double x, double y) implements HasPoint {
+    @Override
+    public String toString() {
+        return "(" + x + ", " + y + ")";
+    }
+}

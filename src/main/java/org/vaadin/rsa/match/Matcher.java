@@ -22,8 +22,8 @@ import java.util.*;
 public class Matcher implements Serializable {
 
     private final PointQuadtree<Ride> quadtree;
-    private static Location topLeft = new Location(0, 1000);
-    private static Location bottomRight = new Location(1000, 0);
+    private static Location topLeft = new Location(-1000, 1000);
+    private static Location bottomRight = new Location(1000, -1000);
     private static double radius = 10;
 
     private final Map<Long, Ride> rides = new HashMap<>();
