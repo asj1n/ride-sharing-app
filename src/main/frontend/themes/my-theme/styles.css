@@ -19,3 +19,14 @@ vaadin-grid.users-grid {
     max-height: 300px;
     overflow: auto;
 }
+
+vaadin-grid.rides-grid::part(header-cell) {
+    background-color: #ef5757;
+    color: black;
+    font-weight: bold;
+}
+
+vaadin-grid.rides-grid {
+    max-height: 300px;
+    overflow: auto;
+}
