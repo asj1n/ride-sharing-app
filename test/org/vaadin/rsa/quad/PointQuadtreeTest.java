@@ -1,4 +1,4 @@
-package rsa.quad;
+package org.vaadin.rsa.quad;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -25,7 +25,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class PointQuadtreeTest {
 
 
-	private static final String DATA = "rsa/quad/portuguese-locations.txt";
+	private static final String DATA = "org/vaadin/rsa/quad/portuguese-locations.txt";
 	static double RADIUS = 0.0001D; // 11.13 m
 
 	private static final int CAPACITY = 10;

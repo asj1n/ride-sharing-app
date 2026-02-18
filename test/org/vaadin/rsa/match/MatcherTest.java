@@ -1,20 +1,19 @@
-package rsa.match;
+package org.vaadin.rsa.match;
 
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import rsa.RideSharingAppException;
-import rsa.TestData;
-import rsa.quad.Trie;
-import rsa.ride.RideRole;
-import rsa.user.*;
+import org.vaadin.rsa.RideSharingAppException;
+import org.vaadin.rsa.TestData;
+import org.vaadin.rsa.ride.RideRole;
+import org.vaadin.rsa.user.*;
 
 import java.util.SortedSet;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static rsa.user.UsersTest.USERS_FILE;
+import static org.vaadin.rsa.user.UsersTest.USERS_FILE;
 
 /**
  * Test a Matcher. Check if matcher matches the correct rides.

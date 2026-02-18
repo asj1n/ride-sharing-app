@@ -1,29 +1,29 @@
-package rsa.ride;
+package org.vaadin.rsa.ride;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import rsa.RideSharingAppException;
-import rsa.TestData;
-import rsa.match.PreferredMatch;
-import rsa.match.RideMatch;
-import rsa.match.Location;
-import rsa.user.User;
-import rsa.user.UserStars;
-import rsa.user.Users;
+import org.vaadin.rsa.RideSharingAppException;
+import org.vaadin.rsa.TestData;
+import org.vaadin.rsa.match.PreferredMatch;
+import org.vaadin.rsa.match.RideMatch;
+import org.vaadin.rsa.match.Location;
+import org.vaadin.rsa.user.User;
+import org.vaadin.rsa.user.UserStars;
+import org.vaadin.rsa.user.Users;
 
 import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * Test for {@link rsa.ride.Ride}.
+ * Test for {@link org.vaadin.rsa.ride.Ride}.
  * Depends on:
  * <ul>
- *      <li> {@link rsa.match.RideMatch};
+ *      <li> {@link org.vaadin.rsa.match.RideMatch};
  *      <li> {@link Location};
- *      <li> {@link rsa.user.User};</li>
- *      <li> {@link rsa.user.Users}.</li>
+ *      <li> {@link org.vaadin.rsa.user.User};</li>
+ *      <li> {@link org.vaadin.rsa.user.Users}.</li>
  * </ul>
  */
 class RideTest extends TestData {

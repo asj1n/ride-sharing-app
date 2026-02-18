@@ -1,17 +1,17 @@
-package rsa.match;
+package org.vaadin.rsa.match;
 
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import rsa.RideSharingAppException;
-import rsa.TestData;
-import rsa.ride.Ride;
-import rsa.ride.RideRole;
-import rsa.user.Car;
-import rsa.user.User;
-import rsa.user.Users;
+import org.vaadin.rsa.RideSharingAppException;
+import org.vaadin.rsa.TestData;
+import org.vaadin.rsa.ride.Ride;
+import org.vaadin.rsa.ride.RideRole;
+import org.vaadin.rsa.user.Car;
+import org.vaadin.rsa.user.User;
+import org.vaadin.rsa.user.Users;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -20,7 +20,7 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static rsa.user.UsersTest.USERS_FILE;
+import static org.vaadin.rsa.user.UsersTest.USERS_FILE;
 
 public class RideMatchTest extends TestData {
 	static Users allUsers;

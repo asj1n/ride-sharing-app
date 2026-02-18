@@ -1,4 +1,4 @@
-package rsa.ride;
+package org.vaadin.rsa.ride;
 
 
 import org.junit.jupiter.api.Test;

@@ -1,4 +1,4 @@
-package rsa.user;
+package org.vaadin.rsa.user;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Nested;
@@ -6,9 +6,9 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.junit.jupiter.params.provider.MethodSource;
-import rsa.TestData;
-import rsa.match.PreferredMatch;
-import rsa.ride.RideRole;
+import org.vaadin.rsa.TestData;
+import org.vaadin.rsa.match.PreferredMatch;
+import org.vaadin.rsa.ride.RideRole;
 
 import java.util.stream.Stream;
 

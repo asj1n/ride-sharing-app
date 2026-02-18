@@ -1,8 +1,8 @@
-package rsa.match;
+package org.vaadin.rsa.match;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import rsa.TestData;
+import org.vaadin.rsa.TestData;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

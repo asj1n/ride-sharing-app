@@ -1,30 +1,30 @@
-package rsa;
+package org.vaadin.rsa;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import rsa.match.Location;
-import rsa.match.Matcher;
-import rsa.match.RideMatch;
-import rsa.ride.RideRole;
-import rsa.user.Car;
-import rsa.user.User;
-import rsa.user.UserStars;
-import rsa.user.Users;
+import org.vaadin.rsa.match.Location;
+import org.vaadin.rsa.match.Matcher;
+import org.vaadin.rsa.match.RideMatch;
+import org.vaadin.rsa.ride.RideRole;
+import org.vaadin.rsa.user.Car;
+import org.vaadin.rsa.user.User;
+import org.vaadin.rsa.user.UserStars;
+import org.vaadin.rsa.user.Users;
 
 import java.io.File;
 import java.util.Set;
 import java.util.SortedSet;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static rsa.match.PreferredMatch.*;
+import static org.vaadin.rsa.match.PreferredMatch.*;
 
 /**
 * Template for a test class on Manager - YOU NEED TO IMPLEMENT THESE TESTS!
 * 
 */
-public class ManagerTest extends rsa.TestData {
+public class ManagerTest extends TestData {
 	public static final File USERS_FILE = new File("test_users.ser");
 
 	static Manager manager;

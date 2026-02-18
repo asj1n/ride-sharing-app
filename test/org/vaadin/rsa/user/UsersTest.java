@@ -1,10 +1,10 @@
-package rsa.user;
+package org.vaadin.rsa.user;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import rsa.TestData;
-import rsa.RideSharingAppException;
+import org.vaadin.rsa.TestData;
+import org.vaadin.rsa.RideSharingAppException;
 
 import java.io.*;
 

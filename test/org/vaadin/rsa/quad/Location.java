@@ -1,4 +1,4 @@
-package rsa.quad;
+package org.vaadin.rsa.quad;
 
 
 /**

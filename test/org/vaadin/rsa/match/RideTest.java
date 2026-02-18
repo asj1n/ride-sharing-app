@@ -1,4 +1,4 @@
-package rsa.match;
+package org.vaadin.rsa.match;
 
 
 import org.junit.jupiter.api.AfterAll;
@@ -7,18 +7,18 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
-import rsa.RideSharingAppException;
-import rsa.TestData;
-import rsa.ride.Ride;
-import rsa.ride.RideRole;
-import rsa.user.User;
-import rsa.user.Users;
+import org.vaadin.rsa.RideSharingAppException;
+import org.vaadin.rsa.TestData;
+import org.vaadin.rsa.ride.Ride;
+import org.vaadin.rsa.ride.RideRole;
+import org.vaadin.rsa.user.User;
+import org.vaadin.rsa.user.Users;
 
 import java.util.HashSet;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static rsa.user.UsersTest.USERS_FILE;
+import static org.vaadin.rsa.user.UsersTest.USERS_FILE;
 
 public class RideTest extends TestData {
 	static Users allUsers;

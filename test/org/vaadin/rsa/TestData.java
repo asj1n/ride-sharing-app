@@ -1,4 +1,4 @@
-package rsa;
+package org.vaadin.rsa;
 
 import org.junit.jupiter.params.provider.Arguments;
 
